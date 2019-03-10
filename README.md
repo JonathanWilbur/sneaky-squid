@@ -11,6 +11,9 @@ to do the following, inclusively:
 - Delete or replace HTTP headers that reveal information about users.
   - Namely, the `User-Agent` header.
 - Block HTTP/S requests to tracking and analytics domains.
+  - Note that this blocking is very aggressive by default. Consider editing
+    the files in `./source/blocklists` and rebuilding if the defaults do not
+    work for your purposes.
 - Block the JavaScript files commonly used in Analytics tools.
 - Provide repudiatable access by intentionally not requiring authentication.
 

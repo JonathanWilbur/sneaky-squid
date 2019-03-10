@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+
+  sneakysquid:
+    build: .
+    container_name: sneakysquid
+    hostname: sneakysquid
+    ports:
+      - '3128:3128/tcp'
+      - '4128:4128/tcp'
