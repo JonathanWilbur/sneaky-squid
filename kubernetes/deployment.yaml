@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sneakysquid
+spec:
+  selector:
+    matchLabels:
+      app: sneakysquid
+  template:
+    metadata:
+      labels:
+        app: sneakysquid
+    spec:
+      containers:
+      - name: sneakysquid
+        image: jonathanwilbur1993/sneakysquid:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3128
+        - containerPort: 4128

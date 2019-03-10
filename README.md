@@ -40,8 +40,8 @@ to do the following, inclusively:
 
 - [x] HTTPS Interception
 - [ ] Healthcheck
-- [ ] `docker-compose.yml`
-- [ ] Create Kubernetes deployment.
+- [x] `docker-compose.yml`
+- [x] Create Kubernetes deployment.
 
 ## Contact Me
 
